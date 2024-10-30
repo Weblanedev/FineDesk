@@ -1,0 +1,53 @@
+.footer-icon {
+  fill: $white;
+
+  &:hover {
+    fill: $primary;
+  }
+}
+
+.collapse-open {
+  overflow: hidden;
+
+  @include media-breakpoint-up(xxl) {
+    overflow: visible;
+  }
+}
+
+.category-card-header {
+  font-size: 0.9375rem;
+}
+
+.category-card-image {
+  width: 10rem;
+}
+
+.best-gear-image {
+  object-fit: cover;
+  height: 18.75rem;
+
+  @include media-breakpoint-up(xxl) {
+    height: 36.75rem;
+  }
+}
+
+.prevent-navbar-scroll {
+  overflow: hidden;
+
+  @include media-breakpoint-up(xxl) {
+    overflow: auto;
+  }
+}
+
+.offcanvas-nav {
+  height: calc(100% - 7.5rem);
+
+  @include media-breakpoint-up(md) {
+    height: auto;
+  }
+}
+
+.spinner-wrapper {
+  height: calc(100vh - 6rem);
+  width: calc(100vw - 6rem);
+}
